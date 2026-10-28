@@ -1,0 +1,16 @@
+backend/.venv/
+backend/instance/
+backend/*.db*
+backend/**/instance/
+backend/**/*.db*
+__pycache__/
+*.pyc
+.DS_Store
+frontend/dist/
+frontend/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.log

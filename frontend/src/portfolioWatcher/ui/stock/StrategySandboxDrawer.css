@@ -1,0 +1,800 @@
+/* StrategySandboxDrawer.css */
+.fowa-sandbox-drawer {
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(18, 28, 48, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.fowa-sandbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background: #f8fafc;
+  border-bottom: 1px solid rgba(18, 28, 48, 0.08);
+  cursor: pointer;
+  user-select: none;
+}
+
+.fowa-sandbox-header:hover {
+  background: #f1f5f9;
+}
+
+.fowa-sandbox-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fowa-sandbox-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fowa-sandbox-pill {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fowa-sandbox-controls-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fowa-sandbox-posture-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.3px;
+}
+
+.fowa-sandbox-posture-badge.long {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #86efac;
+}
+
+.fowa-sandbox-posture-badge.exit {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.fowa-sandbox-posture-badge.cash {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.fowa-sandbox-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.fowa-sandbox-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Control Row */
+.fowa-sandbox-config-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(18, 28, 48, 0.06);
+}
+
+.fowa-sandbox-groups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fowa-sandbox-group-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.fowa-sandbox-group-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #475569;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fowa-sandbox-group-count {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.fowa-sandbox-strategy-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 8px;
+}
+
+.fowa-sandbox-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #334155;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.fowa-sandbox-checkbox-item:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.fowa-sandbox-checkbox-item.checked {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.fowa-sandbox-checkbox-item.checked.classic {
+  background: #f0fdf4;
+  border-color: #86efac;
+  color: #15803d;
+}
+
+.fowa-sandbox-checkbox-item input[type="checkbox"] {
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.fowa-sandbox-controls-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fowa-sandbox-controls-section .fowa-sandbox-group-title {
+  margin-bottom: 0;
+}
+
+.fowa-sandbox-controls-section .fowa-sandbox-options-bar {
+  background: transparent;
+  padding: 0;
+}
+
+.fowa-sandbox-controls-section .fowa-sandbox-dna-card {
+  background: #ffffff;
+  border: 1px solid rgba(131, 92, 245, 0.25);
+  box-shadow: 0 1px 3px rgba(131, 92, 245, 0.05);
+}
+
+.fowa-sandbox-options-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.fowa-sandbox-options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.fowa-sandbox-select-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fowa-sandbox-select-field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.fowa-sandbox-select-field select,
+.fowa-sandbox-select-field input[type="date"] {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #1e293b;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fowa-sandbox-select-field select:focus,
+.fowa-sandbox-select-field input[type="date"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.fowa-sandbox-run-btn {
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fowa-sandbox-run-btn:hover {
+  background: #1d4ed8;
+}
+
+.fowa-sandbox-run-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Metric Badges Strip */
+.fowa-sandbox-metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.fowa-sandbox-metric-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fowa-sandbox-metric-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.fowa-sandbox-metric-value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.fowa-sandbox-metric-val {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fowa-sandbox-metric-val.positive {
+  color: #16a34a;
+}
+
+.fowa-sandbox-metric-val.negative {
+  color: #dc2626;
+}
+
+.fowa-sandbox-metric-sub {
+  font-size: 11px;
+  color: #64748b;
+}
+
+.fowa-sandbox-alpha-pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.fowa-sandbox-alpha-pill.negative {
+  background: #fef2f2;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+/* Equity Chart Canvas */
+.fowa-sandbox-chart-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  position: relative;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.fowa-sandbox-chart-container.pw-chart-focused {
+  border-color: rgba(49, 87, 255, 0.22);
+  box-shadow: 0 1px 4px rgba(23, 35, 69, 0.04);
+}
+
+.fowa-sandbox-chart-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 12px;
+  color: #475569;
+}
+
+.fowa-sandbox-chart-legend-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fowa-sandbox-chart-hint {
+  font-size: 11px;
+  color: #94a3b8;
+  font-style: italic;
+  user-select: none;
+}
+
+.fowa-sandbox-legend-items {
+  display: flex;
+  gap: 16px;
+}
+
+.fowa-sandbox-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.fowa-legend-color-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.fowa-legend-color-dot.ensemble {
+  background: #00d4ff;
+  box-shadow: 0 0 6px rgba(0, 212, 255, 0.6);
+}
+
+.fowa-legend-color-dot.benchmark {
+  background: #94a3b8;
+}
+
+.fowa-sandbox-chart-canvas-wrapper {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+/* Trades table */
+.fowa-sandbox-trades-section {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.fowa-sandbox-trades-section.collapsed .fowa-sandbox-trades-header {
+  border-bottom: none;
+}
+
+.fowa-sandbox-trades-header {
+  padding: 8px 14px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+
+.fowa-sandbox-trades-header:hover {
+  background: #edf2f7;
+}
+
+.fowa-sandbox-trades-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fowa-sandbox-trades-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fowa-collapse-chevron {
+  font-size: 10px;
+  color: #64748b;
+  display: inline-block;
+  width: 12px;
+}
+
+.fowa-trades-title {
+  font-weight: 600;
+  color: #334155;
+}
+
+.fowa-trades-subtitle {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.fowa-toggle-action-pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  background: #e2e8f0;
+  color: #475569;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: all 0.15s ease;
+}
+
+.fowa-sandbox-trades-header:hover .fowa-toggle-action-pill {
+  background: #cbd5e1;
+  color: #0f172a;
+}
+
+.fowa-sandbox-trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.fowa-sandbox-trades-table th {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.fowa-sandbox-trades-table td {
+  padding: 6px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.fowa-trade-action-pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.fowa-trade-action-pill.buy {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.fowa-trade-action-pill.exit {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.fowa-trade-action-pill.trim {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Asset DNA Diagnostic Card */
+.fowa-sandbox-dna-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #faf8ff;
+  border: 1px solid rgba(131, 92, 245, 0.22);
+  border-radius: 8px;
+  font-size: 13px;
+  animation: fowa-fade-in 0.2s ease;
+}
+
+.fowa-sandbox-dna-loading {
+  font-size: 12px;
+  color: #64748b;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.fowa-sandbox-dna-close-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: all 0.15s ease;
+}
+
+.fowa-sandbox-dna-close-btn:hover {
+  background: rgba(15, 23, 42, 0.08);
+  color: #0f172a;
+}
+
+.fowa-sandbox-dna-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fowa-sandbox-dna-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #1e1b4b;
+}
+
+.fowa-sandbox-dna-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.fowa-sandbox-dna-badge.purple {
+  background: #f3e8ff;
+  color: #6b21a8;
+  border: 1px solid #d8b4fe;
+}
+
+.fowa-sandbox-dna-badge.emerald {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+
+.fowa-sandbox-dna-badge.amber {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.fowa-sandbox-dna-badge.blue {
+  background: #e0f2fe;
+  color: #075985;
+  border: 1px solid #7dd3fc;
+}
+
+.fowa-sandbox-dna-badge.gray {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.fowa-sandbox-dna-metrics {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #475569;
+}
+
+.fowa-sandbox-dna-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fowa-sandbox-dna-metric-item strong {
+  color: #0f172a;
+}
+
+.fowa-sandbox-dna-preset-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(131, 92, 245, 0.18);
+  font-size: 12px;
+}
+
+.fowa-sandbox-dna-reason {
+  color: #4b5563;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.fowa-sandbox-dna-apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #7952eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.fowa-sandbox-dna-apply-btn:hover {
+  background: #653ee0;
+  transform: translateY(-1px);
+}
+
+.fowa-sandbox-dna-apply-btn:active {
+  transform: translateY(0);
+}
+
+.fowa-sandbox-dna-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.fowa-sandbox-dna-quant-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #4b5563;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(131, 92, 245, 0.06);
+  border: 1px solid rgba(131, 92, 245, 0.2);
+  border-radius: 4px;
+  padding: 3px 7px;
+  transition: all 0.15s ease;
+}
+
+.fowa-sandbox-dna-quant-toggle:hover {
+  background: rgba(131, 92, 245, 0.12);
+  color: #1e1b4b;
+}
+
+.fowa-sandbox-dna-quant-toggle input[type="checkbox"] {
+  accent-color: #7952eb;
+  cursor: pointer;
+}
+
+/* Strategy Model Family Filter Pills */
+.fowa-sandbox-family-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.fowa-sandbox-family-filter-label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.fowa-sandbox-family-pills {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ede9fe;
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.fowa-sandbox-family-pill {
+  padding: 3px 9px;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.fowa-sandbox-family-pill:hover {
+  color: #1e1b4b;
+}
+
+.fowa-sandbox-family-pill.active {
+  background: #ffffff;
+  color: #4338ca;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.fowa-sandbox-empty-quant-notice {
+  padding: 16px;
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  font-style: italic;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+

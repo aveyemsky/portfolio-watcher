@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <!-- Rounded squircle icon background -->
+  <rect width="1024" height="1024" rx="225" fill="#ffffff"/>
+
+  <!-- Eye shape: outer curve and inner cutout, mathematically fitted from authentic original -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="
+    M 144 495
+    C 275 315, 410 259, 512 259
+    C 614 259, 749 315, 880 495
+    C 749 675, 614 731, 512 731
+    C 410 731, 275 675, 144 495 Z
+    M 204 495
+    C 265 415, 385 304, 512 304
+    C 639 304, 759 415, 820 495
+    C 759 575, 639 686, 512 686
+    C 385 686, 265 575, 204 495 Z"
+    fill="#086144"/>
+
+  <!-- Candlesticks inside the eye -->
+  <!-- 1. Green (left) -->
+  <line x1="341.5" y1="412" x2="341.5" y2="574" stroke="#3bb77b" stroke-width="12" stroke-linecap="round"/>
+  <rect x="319" y="453" width="45" height="89" rx="8" fill="#3bb77b"/>
+
+  <!-- 2. Blue (mid-left) -->
+  <line x1="423.5" y1="354" x2="423.5" y2="574" stroke="#0c78fe" stroke-width="12" stroke-linecap="round"/>
+  <rect x="395" y="403" width="57" height="130" rx="8" fill="#0c78fe"/>
+
+  <!-- 3. Navy (center) -->
+  <line x1="507" y1="442" x2="507" y2="652" stroke="#122744" stroke-width="12" stroke-linecap="round"/>
+  <rect x="479" y="496" width="56" height="117" rx="8" fill="#122744"/>
+
+  <!-- 4. Coral / Red (mid-right) -->
+  <line x1="589" y1="416" x2="589" y2="608" stroke="#fb6f72" stroke-width="12" stroke-linecap="round"/>
+  <rect x="562" y="463" width="54" height="105" rx="8" fill="#fb6f72"/>
+
+  <!-- 5. Blue (right) -->
+  <line x1="663.5" y1="366" x2="663.5" y2="574" stroke="#0a76fd" stroke-width="12" stroke-linecap="round"/>
+  <rect x="638" y="416" width="51" height="117" rx="8" fill="#0a76fd"/>
+</svg>
